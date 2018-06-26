@@ -13,6 +13,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
+@property (weak, nonatomic) IBOutlet UILabel *twoTotalLabel;
+@property (weak, nonatomic) IBOutlet UIView *totalSplittingView;
+@property (weak, nonatomic) IBOutlet UILabel *threeTotalLabel;
+@property (weak, nonatomic) IBOutlet UILabel *fourTotalLabel;
+@property (weak, nonatomic) IBOutlet UILabel *fiveTotalLabel;
 
 @end
 
@@ -44,16 +49,27 @@
     double tipPercentage = [percentages[self.tipControl.selectedSegmentIndex] doubleValue];
     double tip = tipPercentage * bill;
     double total = tip + bill;
+    double halfTotal = total/2;
+    double threeTotal = total/3;
+    double fourTotal = total/4;
+    double fiveTotal = total/5;
     
     self.tipLabel.text = [NSString stringWithFormat: @"$%.2f",tip];
     self.totalLabel.text =[NSString stringWithFormat:@"$%.2f",total];
+    self.twoTotalLabel.text =[NSString stringWithFormat:@"$%.2f",halfTotal];
+    self.threeTotalLabel.text =[NSString stringWithFormat:@"$%.2f",threeTotal];
+    self.fourTotalLabel.text =[NSString stringWithFormat:@"$%.2f",fourTotal];
+    self.fiveTotalLabel.text =[NSString stringWithFormat:@"$%.2f",fiveTotal];
 }
 - (IBAction)onEditingBegin:(id)sender {
     [UIView animateWithDuration:0.2 animations:^{
 //        self.billField.frame = CGRectMake(self.billField.frame.origin.x, self.billField.frame.origin.y +30, self.billField.frame.size.width, self.billField.frame.size.height);
         
         //total label greys out
+    
         self.totalLabel.alpha = 0.2;
+        
+        self.totalSplittingView.alpha = 0;
     }];
 }
 - (IBAction)onEditingEnd:(id)sender {
@@ -65,6 +81,8 @@
         
         //total label reappears
        self.totalLabel.alpha = 1;
+        
+        self.totalSplittingView.alpha = 1;
     }];
     
 }
