@@ -20,7 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_billField becomeFirstResponder];
     // Do any additional setup after loading the view, typically from a nib.
+   
 }
 
 
@@ -50,8 +52,8 @@
     [UIView animateWithDuration:0.2 animations:^{
 //        self.billField.frame = CGRectMake(self.billField.frame.origin.x, self.billField.frame.origin.y +30, self.billField.frame.size.width, self.billField.frame.size.height);
         
-        //total label disappears
-        self.totalLabel.alpha = 0;
+        //total label greys out
+        self.totalLabel.alpha = 0.2;
     }];
 }
 - (IBAction)onEditingEnd:(id)sender {
@@ -61,7 +63,7 @@
     [UIView animateWithDuration:0.2 animations:^{
         //self.billField.frame = newFrame;
         
-        //tip label reappears
+        //total label reappears
        self.totalLabel.alpha = 1;
     }];
     
