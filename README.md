@@ -10,7 +10,7 @@ Time spent: **4** hours spent in total
 
 The following **required** functionality is complete:
 
-* [x ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
 * [ ] Settings page to change the default tip percentage.
@@ -38,7 +38,7 @@ I encountered some challenges in efficiency-I felt that some of my code was very
 
 ## Credits
 
-- (https://www.canva.com)- cash artwork
+- https://www.canva.com - cash artwork
 
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
 
