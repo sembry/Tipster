@@ -28,17 +28,17 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/NKzPhJa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-I encountered some challenges in creating the launchscreen and creating the 
+I encountered some challenges in efficiency-I felt that some of my code was very repetitive and could've been simplified but I am still adjusting to Objective C syntax.
 
 ## Credits
 
-List an 3rd party libraries, icons, graphics, or other assets you used in your app.
+- (https://www.canva.com)- cash artwork
 
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
 
