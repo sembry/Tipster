@@ -66,8 +66,8 @@
 //        self.billField.frame = CGRectMake(self.billField.frame.origin.x, self.billField.frame.origin.y +30, self.billField.frame.size.width, self.billField.frame.size.height);
         
         //total label greys out
-    
         self.totalLabel.alpha = 0.2;
+        self.tipLabel.alpha = 0.2;
         
         self.totalSplittingView.alpha = 0;
     }];
@@ -81,7 +81,7 @@
         
         //total label reappears
        self.totalLabel.alpha = 1;
-        
+        self.tipLabel.alpha = 1;
         self.totalSplittingView.alpha = 1;
     }];
     
